@@ -26,11 +26,12 @@
                                         <div class="ns hidden-md-and-down" style="margin-top: 25%">Neurospace</div>
                                         <div class="ns hidden-md-and-up" style="margin-top: -10px">Neurospace</div>
                                         <div class="sub-ns" style="margin-top: -3%; margin-bottom: 4%">The wearable of your dreams</div>
-                                        <v-btn large outline class="teal--text ns hidden-md-and-down" style="font-size: 15px; -webkit-filter: drop-shadow(0px 0px 50px #8dfbea);">Get more information</v-btn>
+                                        <v-btn href="/solution" large outline class="teal--text ns hidden-md-and-down" style="font-size: 15px; -webkit-filter: drop-shadow(0px 0px 50px #8dfbea);">Get more information</v-btn>
                                     </v-flex>
                                 </v-layout>
                                 <v-layout row wrap style="">
                                     <v-flex xs12 lg12>
+                                      <a href="#whatis">
                                         <div class="ns hidden-md-and-down" style="margin-top: -70px; margin-bottom: 50px">
                                             <v-btn icon class="orange--text lighten-5 ">
                                                 <v-icon large style="font-size: 200px">keyboard_arrow_down</v-icon>
@@ -41,6 +42,7 @@
                                                 <v-icon large style="font-size: 200px">keyboard_arrow_down</v-icon>
                                             </v-btn>
                                         </div>
+                                      </a>
                                     </v-flex>
                                 </v-layout>
                             </v-flex>
@@ -52,7 +54,7 @@
 
                 <v-layout row wrap style="background-color: #2f3845;padding-bottom: 40px">
                     <v-flex xs12 lg12>
-                        <div class="title-hw">
+                        <div id="whatis" class="title-hw">
                             What is neurospace
                         </div>
                     </v-flex>
@@ -61,22 +63,24 @@
                         <div class="title-text"> Artificial Intelligence</div>
                         <div class="explain-text">
                             Several music software applications have been developed using AI to produce music.
-                            For example, Magenta, a project from Google Brain team use machine learning to create compelling art and music.
-                            Like them, Kairos team use TensorFlow and Magenta.
+                            For example, Magenta, a project from Google Brain team uses machine learning to create compelling art and music.
+                            Like them, Kairos team uses TensorFlow and Magenta.
                         </div>
                     </v-flex>
                     <v-flex xs12 lg4>
                         <img style="width: auto; height: 100px" class="shadowfilter" src="../assets/levels.png"/>
                         <div class="title-text"> Procedural Sound</div>
                         <div class="explain-text">
-                            Our product is generated based on the patient's brain activity in real time.
+                            Our music is generated based on the user's brain activity in real time.
+                            The music is unique to every user and will specialize in relaxing you.
                         </div>
                     </v-flex>
                     <v-flex xs12 lg4>
                         <img style="width: auto; height: 100px" class="shadowfilter" src="../assets/lotus.png"/>
                         <div class="title-text">Relaxing and Comfort</div>
                         <div class="explain-text">
-                            Neurospace produce adaptative music to reduce stress.
+                            Neurospace produces adaptative music to reduce stress.
+                            Our AI focuses on producing nothing but relaxing tunes to induce a pacific state on the user and allow them to lead a better live.
                         </div>
                     </v-flex>
                 </v-layout>
@@ -86,7 +90,7 @@
                         <v-layout row wrap align-center justify-center >
                             <v-flex xs12 lg12 text-xs-center style="margin-top:5%; padding:0">
                                 <div class="title-hw" style="padding:0">
-                                    How to work
+                                    How it works
                                 </div>
                             </v-flex>
                         </v-layout>
@@ -107,9 +111,8 @@
                                 </div>
                                 <v-layout align-center justify-center>
                                     <div class="explain-text-hw">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Quisque blandit, lectus sit amet eleifend rutrum, risus tortor vehicula tortor, et elementum dolor nisi vel nulla.
-                                        Fusce a turpis odio. Pellentesque.
+                                        Using an Open BCI ganglion and a set of electrodes we can measure the user's brainwaves which serves as input for the AI music composer.
+                                        We have placed the electrodes on strategic places that pick up the alpha, gamma, theta, and beta brainwaves which we use to determine your relaxation state.
                                     </div>
                                 </v-layout >
                             </v-flex>
@@ -123,27 +126,65 @@
                         </v-layout>
                     </v-flex>
                 </v-layout>
-                <v-layout align-center justify-center row wrap style="">
-                    <v-flex xs12 lg12 text-xs-center style="margin-top:5%; padding:0">
-                        <div class="subtitle-hw" style="padding:0">
+                <v-layout row wrap align-center justify-center style="margin:2%; margin-bottom:1%">
+                    <v-flex xs12 lg4 text-xs-left style="padding-bottom:5%;">
+                        <v-layout align-center justify-center>
+                            <div class="ns-img-border ">
+                                <img src="../assets/img3.png"  class="ns-img shadowfilterfixed">
+                            </div>
+                        </v-layout>
 
-                        </div>
                     </v-flex>
-                </v-layout>
-                <v-layout align-center justify-center row wrap style="background-color: #252c36">
-                    <v-flex xs12 lg12 text-xs-center style="margin-top:5%; padding:0">
-                        <div class="subtitle-hw" style="padding:0">
-                            Quantifying your feelings
-                        </div>
-                    </v-flex>
-                </v-layout>
-                <v-layout align-center justify-center row wrap style="">
-                    <v-flex xs12 lg12 text-xs-center style="margin-top:5%; padding:0">
-                        <div class="subtitle-hw" style="padding:0">
+                    <v-flex xs12 lg4 text-xs-center style="padding-bottom:5%;" >
+                        <div class="subtitle-hw justify-right " style="font-size:2.5em">
                             Our AI music composer
                         </div>
+                        <v-layout align-center justify-center>
+                            <div class="explain-text-hw">
+                                We have used a <a href="http://www.piano-e-competition.com/midiinstructions.asp"> library of MIDI files </a>
+                                that are pure classical piano from the e-Piano Junior Competition. Our artificial intelligence takes this as its data set and builds relaxing songs from it.
+                            </div>
+                        </v-layout >
+                    </v-flex>
+                    <v-flex xs12 lg4 text-xs-center style="padding-bottom:5%; padding-top:20px">
+                        <v-layout align-center justify-center>
+                            <div class="ns-img-border ">
+                                <img src="../assets/img1.png" class="ns-img shadowfilterfixed">
+                            </div>
+                        </v-layout>
                     </v-flex>
                 </v-layout>
+            </v-flex>
+        </v-layout>
+        <v-layout row wrap align-center justify-center style="margin:2%; margin-bottom:1%">
+            <v-flex xs12 lg4 text-xs-left style="padding-bottom:5%;">
+                <v-layout align-center justify-center>
+                    <div class="ns-img-border ">
+                        <img src="../assets/img3.png"  class="ns-img shadowfilterfixed">
+                    </div>
+                </v-layout>
+
+            </v-flex>
+            <v-flex xs12 lg4 text-xs-center style="padding-bottom:5%;" >
+                <div class="subtitle-hw justify-right " style="font-size:2.5em">
+                    Quantifying your feelings
+                </div>
+                <v-layout align-center justify-center>
+                    <div class="explain-text-hw">
+                        Talk about the waves.
+                    </div>
+                </v-layout >
+            </v-flex>
+            <v-flex xs12 lg4 text-xs-center style="padding-bottom:5%; padding-top:20px">
+                <v-layout align-center justify-center>
+                    <div class="ns-img-border ">
+                        <img src="../assets/img1.png" class="ns-img shadowfilterfixed">
+                    </div>
+                </v-layout>
+            </v-flex>
+        </v-layout>
+    </v-flex>
+</v-layout>
             </v-container>
         </main>
         <v-footer style="background-color: #0c0e12; color: white">
@@ -270,5 +311,21 @@ export default {
 
 }
 .ns-img-border {
+}
+
+/* always present */
+.expand-transition {
+  transition: all .3s ease;
+  height: 30px;
+  padding: 10px;
+  background-color: #eee;
+  overflow: hidden;
+}
+/* .expand-enter defines the starting state for entering */
+/* .expand-leave defines the ending state for leaving */
+.expand-enter, .expand-leave {
+  height: 0;
+  padding: 0 10px;
+  opacity: 0;
 }
 </style>
