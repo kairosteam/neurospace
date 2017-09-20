@@ -31,18 +31,16 @@
                                 </v-layout>
                                 <v-layout row wrap style="">
                                     <v-flex xs12 lg12>
-                                      <a href="#whatis">
                                         <div class="ns hidden-md-and-down" style="margin-top: -70px; margin-bottom: 50px">
-                                            <v-btn icon class="orange--text lighten-5 ">
+                                            <v-btn icon class="orange--text lighten-5 bt" href="#whatis" style="margin-top:10%">
                                                 <v-icon large style="font-size: 200px">keyboard_arrow_down</v-icon>
                                             </v-btn>
                                         </div>
                                         <div class="ns hidden-md-and-up" style="margin-top: -140px; margin-bottom: 30px">
-                                            <v-btn icon class="orange--text lighten-5 ">
+                                            <v-btn icon class="orange--text lighten-5 bt" href="#whatis">
                                                 <v-icon large style="font-size: 200px">keyboard_arrow_down</v-icon>
                                             </v-btn>
                                         </div>
-                                      </a>
                                     </v-flex>
                                 </v-layout>
                             </v-flex>
@@ -103,7 +101,6 @@
                                         <img src="../assets/img3.png"  class="ns-img shadowfilterfixed">
                                     </div>
                                 </v-layout>
-
                             </v-flex>
                             <v-flex xs12 lg4 text-xs-center style="padding-bottom:5%;" >
                                 <div class="subtitle-hw justify-right " style="font-size:2.5em">
@@ -127,14 +124,6 @@
                     </v-flex>
                 </v-layout>
                 <v-layout row wrap align-center justify-center style="margin:2%; margin-bottom:1%">
-                    <v-flex xs12 lg4 text-xs-left style="padding-bottom:5%;">
-                        <v-layout align-center justify-center>
-                            <div class="ns-img-border ">
-                                <img src="../assets/img3.png"  class="ns-img shadowfilterfixed">
-                            </div>
-                        </v-layout>
-
-                    </v-flex>
                     <v-flex xs12 lg4 text-xs-center style="padding-bottom:5%;" >
                         <div class="subtitle-hw justify-right " style="font-size:2.5em">
                             Our AI music composer
@@ -142,44 +131,29 @@
                         <v-layout align-center justify-center>
                             <div class="explain-text-hw">
                                 We have used a <a href="http://www.piano-e-competition.com/midiinstructions.asp"> library of MIDI files </a>
-                                that are pure classical piano from the e-Piano Junior Competition. Our artificial intelligence takes this as its data set and builds relaxing songs from it.
+                                that are pure classical piano from the e-Piano Junior Competition. Our artificial intelligence takes this as its data set and
+                                builds relaxing songs from it.
                             </div>
                         </v-layout >
                     </v-flex>
                     <v-flex xs12 lg4 text-xs-center style="padding-bottom:5%; padding-top:20px">
                         <v-layout align-center justify-center>
                             <div class="ns-img-border ">
-                                <img src="../assets/img1.png" class="ns-img shadowfilterfixed">
+                                <img src="../assets/img890.jpg" class="ns-img shadowfilterfixed">
                             </div>
                         </v-layout>
                     </v-flex>
-                </v-layout>
-            </v-flex>
-        </v-layout>
-        <v-layout row wrap align-center justify-center style="margin:2%; margin-bottom:1%">
-            <v-flex xs12 lg4 text-xs-left style="padding-bottom:5%;">
-                <v-layout align-center justify-center>
-                    <div class="ns-img-border ">
-                        <img src="../assets/img3.png"  class="ns-img shadowfilterfixed">
-                    </div>
-                </v-layout>
-
-            </v-flex>
-            <v-flex xs12 lg4 text-xs-center style="padding-bottom:5%;" >
-                <div class="subtitle-hw justify-right " style="font-size:2.5em">
-                    Quantifying your feelings
-                </div>
-                <v-layout align-center justify-center>
-                    <div class="explain-text-hw">
-                        Talk about the waves.
-                    </div>
-                </v-layout >
-            </v-flex>
-            <v-flex xs12 lg4 text-xs-center style="padding-bottom:5%; padding-top:20px">
-                <v-layout align-center justify-center>
-                    <div class="ns-img-border ">
-                        <img src="../assets/img1.png" class="ns-img shadowfilterfixed">
-                    </div>
+                    <v-flex xs12 lg4 text-xs-center style="padding-bottom:5%;" >
+                        <div class="subtitle-hw justify-right " style="font-size:2.5em">
+                            Quantifying your feelings
+                        </div>
+                        <v-layout align-center justify-center>
+                            <div class="explain-text-hw">
+                                Neurospace analyzes your brainwaves and focuses on creating an increase of the alpha waves (relaxation) and a
+                                decrease of the gamma waves (higher mental activity) as this will create a relaxed state.
+                            </div>
+                        </v-layout >
+                    </v-flex>
                 </v-layout>
             </v-flex>
         </v-layout>
@@ -200,6 +174,11 @@
 </template>
 
 <script>
+$(function() {
+  $('.bt').on('click', function() {
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
+});
 import NsText from './Nstext.vue'
 export default {
     // 7BE0D0
