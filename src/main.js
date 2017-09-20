@@ -5,13 +5,12 @@ import App from './App'
 import router from './router'
 
 Vue.config.productionTip = false
-
 Vue.component('ns-loader', require('./components/Loader.vue'))
 Vue.component('ns-text', require('./components/Nstext.vue'))
 
-import('../node_modules/vuetify/dist/vuetify.min.css')
+/* eslint-plugin-disable */
+import '../node_modules/vuetify/dist/vuetify.min.css' 
 
-/* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,

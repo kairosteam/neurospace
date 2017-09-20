@@ -6,7 +6,7 @@
 </template>
 
 <script>
-  import NsLoader from './Loader.vue'
+import NsLoader from './Loader.vue'
 export default {
     components: {
       NsLoader
