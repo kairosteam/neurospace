@@ -45,15 +45,60 @@
             <v-container fluid fill-content text-xs-center style=" margin-top:0; margin-bottom:0; background-color: #3a5aad">
                 <v-layout id="whatis" row wrap align-center justify-center style="align-items: center; margin-top:0%" >
                     <v-flex xs12 lg12>
-                        <img  src="../assets/algoritmo.png" >
+                        <img  src="../assets/algoritmo.png" style="height: -webkit-fill-available" >
                     </v-flex>
                 </v-layout>
             </v-container>
 
-        </main>
-        <footer>
 
-        </footer>
+
+
+            <v-container fluid fill-content grid-list-md text-xs-center style="height: -webkit-fill-available; margin-top:0; margin-bottom:0">
+                <v-layout row wrap align-center justify-center style="align-items: center; margin-top:0%" >
+                    <v-flex xs12 lg12>
+                        <v-layout row wrap align-center justify-center>
+                            <v-flex xs12 lg12>
+                                <v-layout row wrap style="">
+                                    <v-flex xs12 lg12>
+                                        <div class="ns hidden-md-and-down" style="margin-top: 18%">More features</div>
+                                        <div class="ns hidden-md-and-up" style="margin-top: -10px">More features</div>
+                                    </v-flex>
+                                </v-layout>
+                                <v-layout row wrap style="">
+                                    <v-flex xs12 lg12>
+                                        <div class="ns hidden-md-and-down" style="margin-top: -70px; margin-bottom: 50px">
+                                            <v-btn icon class="orange--text lighten-5 bt" href="#info" style="margin-top:10%">
+                                                <v-icon large style="font-size: 200px">keyboard_arrow_down</v-icon>
+                                            </v-btn>
+                                        </div>
+                                        <div class="ns hidden-md-and-up" style="margin-top: -140px; margin-bottom: 30px">
+                                            <v-btn icon class="orange--text lighten-5 bt" href="#info">
+                                                <v-icon large style="font-size: 200px">keyboard_arrow_down</v-icon>
+                                            </v-btn>
+                                        </div>
+                                    </v-flex>
+                                </v-layout>
+                            </v-flex>
+                        </v-layout>
+                    </v-flex>
+                </v-layout>
+            </v-container>
+            <v-container fluid fill-content text-xs-center style=" margin-top:0; margin-bottom:0; ">
+                <v-layout id="info" row wrap align-center justify-center style="align-items: center; margin-top:0%" >
+                    <v-flex xs12 lg12>
+                        <img  src="../assets/infografia.png" style="width:90%" >
+                    </v-flex>
+                </v-layout>
+            </v-container>
+        </main>
+        <v-footer style="background-color: #0c0e12; color: white">
+            <v-spacer></v-spacer>
+            <div>
+                Made with
+                <v-icon class="red--text">favorite</v-icon>
+                by Kairos Team
+            </div>
+        </v-footer>
     </v-app>
 </template>
 <script>
