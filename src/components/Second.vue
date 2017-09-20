@@ -3,9 +3,9 @@
         <v-toolbar class="elevation-5" style="background-color: #242933;" >
             <v-toolbar-title class="title">The problem</v-toolbar-title>
             <v-spacer></v-spacer>
-            <v-btn flat light class="white--text tbtn">Home</v-btn>
-            <v-btn flat light class="white--text tbtn">Our solution</v-btn>
-            <v-btn flat light class="white--text tbtn">Our team</v-btn>
+            <v-btn href="/home" flat light class="white--text tbtn">Home</v-btn>
+            <v-btn href="/solution" flat light class="white--text tbtn">Our solution</v-btn>
+            <v-btn href="/team" flat light class="white--text tbtn">Our team</v-btn>
         </v-toolbar>
         <main>
             <v-container fluid fill-content grid-list-md text-xs-center style="">
